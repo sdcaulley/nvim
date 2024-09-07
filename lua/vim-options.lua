@@ -5,6 +5,7 @@ vim.g.background = "light"
 
 vim.opt.swapfile = false
 vim.cmd("set title")
+
 -- Fonts
 vim.g.have_nerd_font = true
 
@@ -34,6 +35,7 @@ vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 
 -- Line numbering
 vim.wo.number = true
+vim.wo.relativenumber = true
 
 -- Mouse
 vim.opt.mouse = 'a'
