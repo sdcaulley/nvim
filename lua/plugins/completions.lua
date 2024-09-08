@@ -9,12 +9,24 @@ return {
 			"rafamadriz/friendly-snippets",
 		},
 	},
+    {
+        'windwp/nvim-autopairs',
+        event = "InsertEnter",
+        config = true
+        -- use opts = {} for passing setup options
+        -- this is equivalent to setup({}) function
+    },
 	{
 		"hrsh7th/nvim-cmp",
 		config = function()
+            local cmp_autopairs = require('nvim-autopairs.completion.cmp')
 			local cmp = require("cmp")
 			require("luasnip.loaders.from_vscode").lazy_load()
 
+            cmp.event:on(
+                'confirm_done',
+                cmp_autopairs.on_confirm_done()
+            )
 			cmp.setup({
 				snippet = {
 					expand = function(args)

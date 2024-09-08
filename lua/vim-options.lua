@@ -36,6 +36,7 @@ vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 -- Line numbering
 vim.wo.number = true
 vim.wo.relativenumber = true
+vim.opt.colorcolumn = "80"
 
 -- Mouse
 vim.opt.mouse = 'a'
