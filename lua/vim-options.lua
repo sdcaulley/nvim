@@ -13,8 +13,6 @@ vim.o.mouse = "a"
 vim.o.ignorecase = true
 vim.o.smartcase = true
 vim.o.clipboard = "unnamedplus"
-vim.o.foldexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
-vim.o.foldmethod = "expr"
 
 vim.keymap.set("i", "jj", "<ESC>", { desc = "Exit insert mode with jj" })
 vim.keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })

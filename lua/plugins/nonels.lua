@@ -8,7 +8,7 @@ return {
 				null_ls.builtins.formatting.prettier,
 				null_ls.builtins.formatting.fixjson,
 				null_ls.builtins.formatting.standardjs,
-        null_ls.builtins.diagnostics.elsint_d,
+        null_ls.builtins.diagnostics.eslint_d,
 			},
 		})
 
