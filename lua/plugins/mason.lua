@@ -8,7 +8,8 @@ return {
       "css_variables",
       "cssls",
       "jsonls",
-      "yamlls"
+      "yamlls",
+      "eslint"
     }
   },
   dependencies = {
